@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5CCEC42830D02C008AF043 /* Pods_aVOCAdo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C19E5F4B2CF70F985749E8 /* Pods_aVOCAdo.framework */; };
+		7C5CCEC82830DC75008AF043 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CCEC72830DC75008AF043 /* MenuViewController.swift */; };
+		7C6B8E582828EA1C008500C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B8E572828EA1C008500C7 /* LoginViewController.swift */; };
+		7C6B8E5A2828F691008500C7 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B8E592828F691008500C7 /* EnterEmailViewController.swift */; };
+		7C6B8E5C28290372008500C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B8E5B28290372008500C7 /* MainViewController.swift */; };
+		7C6B8E5E282915F2008500C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B8E5D282915F2008500C7 /* GoogleService-Info.plist */; };
 		7CF60A7C28201C58004100CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60A7B28201C58004100CE /* AppDelegate.swift */; };
 		7CF60A7E28201C58004100CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60A7D28201C58004100CE /* SceneDelegate.swift */; };
-		7CF60A8028201C58004100CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60A7F28201C58004100CE /* ViewController.swift */; };
 		7CF60A8328201C58004100CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF60A8128201C58004100CE /* Main.storyboard */; };
 		7CF60A8528201C59004100CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF60A8428201C59004100CE /* Assets.xcassets */; };
 		7CF60A8828201C59004100CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF60A8628201C59004100CE /* LaunchScreen.storyboard */; };
+		7CF60A9228202096004100CE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CF60A9128202096004100CE /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22C19E5F4B2CF70F985749E8 /* Pods_aVOCAdo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aVOCAdo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5CCEC72830DC75008AF043 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7C6B8E572828EA1C008500C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		7C6B8E592828F691008500C7 /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
+		7C6B8E5B28290372008500C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7C6B8E5D282915F2008500C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C6B8E6228298132008500C7 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6B8E662829818E008500C7 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF60A7828201C58004100CE /* aVOCAdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aVOCAdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF60A7B28201C58004100CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF60A7D28201C58004100CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CF60A7F28201C58004100CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CF60A8228201C58004100CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CF60A8428201C59004100CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CF60A8728201C59004100CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CF60A8928201C59004100CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF60A9128202096004100CE /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		87B67D0CCFC4CD8C57436345 /* Pods-aVOCAdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aVOCAdo.release.xcconfig"; path = "Target Support Files/Pods-aVOCAdo/Pods-aVOCAdo.release.xcconfig"; sourceTree = "<group>"; };
+		AD19CB1190345DAB6440B473 /* Pods-aVOCAdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aVOCAdo.debug.xcconfig"; path = "Target Support Files/Pods-aVOCAdo/Pods-aVOCAdo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5CCEC42830D02C008AF043 /* Pods_aVOCAdo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		688ACA3F050C761D33F03A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6B8E662829818E008500C7 /* GoogleUtilities.framework */,
+				7C6B8E6228298132008500C7 /* FirebaseAuth.framework */,
+				22C19E5F4B2CF70F985749E8 /* Pods_aVOCAdo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71B4F773E635C55DD3FDF54B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD19CB1190345DAB6440B473 /* Pods-aVOCAdo.debug.xcconfig */,
+				87B67D0CCFC4CD8C57436345 /* Pods-aVOCAdo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7CF60A6F28201C58004100CE = {
 			isa = PBXGroup;
 			children = (
 				7CF60A7A28201C58004100CE /* aVOCAdo */,
 				7CF60A7928201C58004100CE /* Products */,
+				71B4F773E635C55DD3FDF54B /* Pods */,
+				688ACA3F050C761D33F03A79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +94,18 @@
 		7CF60A7A28201C58004100CE /* aVOCAdo */ = {
 			isa = PBXGroup;
 			children = (
+				7C5CCEC72830DC75008AF043 /* MenuViewController.swift */,
+				7C6B8E572828EA1C008500C7 /* LoginViewController.swift */,
+				7C6B8E5B28290372008500C7 /* MainViewController.swift */,
+				7C6B8E592828F691008500C7 /* EnterEmailViewController.swift */,
+				7CF60A9128202096004100CE /* logo.jpg */,
 				7CF60A7B28201C58004100CE /* AppDelegate.swift */,
 				7CF60A7D28201C58004100CE /* SceneDelegate.swift */,
-				7CF60A7F28201C58004100CE /* ViewController.swift */,
 				7CF60A8128201C58004100CE /* Main.storyboard */,
 				7CF60A8428201C59004100CE /* Assets.xcassets */,
 				7CF60A8628201C59004100CE /* LaunchScreen.storyboard */,
 				7CF60A8928201C59004100CE /* Info.plist */,
+				7C6B8E5D282915F2008500C7 /* GoogleService-Info.plist */,
 			);
 			path = aVOCAdo;
 			sourceTree = "<group>";
@@ -74,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CF60A8C28201C59004100CE /* Build configuration list for PBXNativeTarget "aVOCAdo" */;
 			buildPhases = (
+				42896F486E7157EB7379BD1E /* [CP] Check Pods Manifest.lock */,
 				7CF60A7428201C58004100CE /* Sources */,
 				7CF60A7528201C58004100CE /* Frameworks */,
 				7CF60A7628201C58004100CE /* Resources */,
+				23F198E6854855DB281D18E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CF60A9228202096004100CE /* logo.jpg in Resources */,
 				7CF60A8828201C59004100CE /* LaunchScreen.storyboard in Resources */,
+				7C6B8E5E282915F2008500C7 /* GoogleService-Info.plist in Resources */,
 				7CF60A8528201C59004100CE /* Assets.xcassets in Resources */,
 				7CF60A8328201C58004100CE /* Main.storyboard in Resources */,
 			);
@@ -133,14 +180,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23F198E6854855DB281D18E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aVOCAdo/Pods-aVOCAdo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aVOCAdo/Pods-aVOCAdo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aVOCAdo/Pods-aVOCAdo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42896F486E7157EB7379BD1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aVOCAdo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CF60A7428201C58004100CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF60A8028201C58004100CE /* ViewController.swift in Sources */,
+				7C6B8E582828EA1C008500C7 /* LoginViewController.swift in Sources */,
+				7C5CCEC82830DC75008AF043 /* MenuViewController.swift in Sources */,
 				7CF60A7C28201C58004100CE /* AppDelegate.swift in Sources */,
+				7C6B8E5A2828F691008500C7 /* EnterEmailViewController.swift in Sources */,
 				7CF60A7E28201C58004100CE /* SceneDelegate.swift in Sources */,
+				7C6B8E5C28290372008500C7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,12 +374,17 @@
 		};
 		7CF60A8D28201C59004100CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD19CB1190345DAB6440B473 /* Pods-aVOCAdo.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q732628BGB;
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = aVOCAdo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,6 +397,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = project.aVOCAdo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -310,12 +408,17 @@
 		};
 		7CF60A8E28201C59004100CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B67D0CCFC4CD8C57436345 /* Pods-aVOCAdo.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q732628BGB;
+				ENABLE_BITCODE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = aVOCAdo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
