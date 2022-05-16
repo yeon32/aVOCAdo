@@ -243,17 +243,31 @@
                                     <action selector="logoutButtonTapped:" destination="kOe-H8-xJB" eventType="touchUpInside" id="vvr-cr-VSP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAT-ux-kxW">
+                                <rect key="frame" x="147" y="569" width="123" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Menu로 가기">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Zcd-LD-Fba" kind="show" id="CW9-Zq-HnF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jwf-jB-mc9"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="efZ-zi-Ht9" firstAttribute="centerX" secondItem="jwf-jB-mc9" secondAttribute="centerX" id="1s2-od-oHH"/>
+                            <constraint firstItem="rAT-ux-kxW" firstAttribute="centerX" secondItem="jwf-jB-mc9" secondAttribute="centerX" id="M06-Gv-Ett"/>
                             <constraint firstItem="oJL-jX-lk0" firstAttribute="centerX" secondItem="jwf-jB-mc9" secondAttribute="centerX" id="V1a-p7-Z75"/>
                             <constraint firstItem="oJL-jX-lk0" firstAttribute="centerY" secondItem="jwf-jB-mc9" secondAttribute="centerY" id="d9j-R0-uts"/>
                             <constraint firstItem="efZ-zi-Ht9" firstAttribute="top" secondItem="oJL-jX-lk0" secondAttribute="bottom" constant="20" id="krq-FF-s2z"/>
+                            <constraint firstItem="rAT-ux-kxW" firstAttribute="top" secondItem="efZ-zi-Ht9" secondAttribute="bottom" constant="10" id="zq7-FU-BRE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="gotomenuButton" destination="rAT-ux-kxW" id="FnI-D8-QlK"/>
                         <outlet property="welcomeLabel" destination="oJL-jX-lk0" id="WV4-co-YBq"/>
                     </connections>
                 </viewController>
@@ -261,20 +275,99 @@
             </objects>
             <point key="canvasLocation" x="-3204.347826086957" y="-319.41964285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--MenuViewController-->
         <scene sceneID="DED-ae-GX7">
             <objects>
-                <viewController id="Zcd-LD-Fba" sceneMemberID="viewController">
+                <viewController title="MenuViewController" id="Zcd-LD-Fba" customClass="MenuViewController" customModule="aVOCAdo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3a-Lq-hu8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oUn-oi-On1">
+                                <rect key="frame" x="30" y="288" width="354" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKJ-E9-NJ5">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="VA7-DO-uVC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="초등 필수 영단어 800">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ElementButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="6TB-zY-WK3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-vX-Q3l">
+                                        <rect key="frame" x="0.0" y="110" width="354" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="KDg-X7-sYP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="중고등 필수 영단어 800">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="HighButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="Ky3-Cw-zTt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o9-Ix-Dhx">
+                                        <rect key="frame" x="0.0" y="220" width="354" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="OWN-gB-WtR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="나만의 단어장">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MyVocaButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="j5m-HH-UGd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YKJ-E9-NJ5" firstAttribute="leading" secondItem="oUn-oi-On1" secondAttribute="leading" id="VL9-Hj-Sas"/>
+                                    <constraint firstAttribute="trailing" secondItem="YKJ-E9-NJ5" secondAttribute="trailing" id="heZ-mc-TYf"/>
+                                    <constraint firstAttribute="trailing" secondItem="dXc-vX-Q3l" secondAttribute="trailing" id="jtu-kR-liK"/>
+                                    <constraint firstAttribute="trailing" secondItem="6o9-Ix-Dhx" secondAttribute="trailing" id="nT7-fH-ISr"/>
+                                    <constraint firstItem="dXc-vX-Q3l" firstAttribute="leading" secondItem="oUn-oi-On1" secondAttribute="leading" id="qip-tP-3To"/>
+                                    <constraint firstItem="6o9-Ix-Dhx" firstAttribute="leading" secondItem="oUn-oi-On1" secondAttribute="leading" id="v02-IJ-0Mt"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flt-VY-LDs">
+                                <rect key="frame" x="129.5" y="106" width="155.5" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bYR-87-0PJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="flt-VY-LDs" firstAttribute="top" secondItem="bYR-87-0PJ" secondAttribute="top" constant="62" id="03T-53-yOd"/>
+                            <constraint firstItem="flt-VY-LDs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bYR-87-0PJ" secondAttribute="leading" id="9ZJ-3n-7z0"/>
+                            <constraint firstItem="bYR-87-0PJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="flt-VY-LDs" secondAttribute="trailing" id="GvL-V8-DWc"/>
+                            <constraint firstItem="oUn-oi-On1" firstAttribute="centerX" secondItem="bYR-87-0PJ" secondAttribute="centerX" id="UK9-wm-AAz"/>
+                            <constraint firstItem="flt-VY-LDs" firstAttribute="centerX" secondItem="bYR-87-0PJ" secondAttribute="centerX" id="Xd2-Ld-o7D"/>
+                            <constraint firstItem="bYR-87-0PJ" firstAttribute="trailing" secondItem="oUn-oi-On1" secondAttribute="trailing" constant="30" id="YO2-bh-Unc"/>
+                            <constraint firstItem="oUn-oi-On1" firstAttribute="leading" secondItem="bYR-87-0PJ" secondAttribute="leading" constant="30" id="cU5-ir-6uP"/>
+                            <constraint firstItem="oUn-oi-On1" firstAttribute="top" secondItem="flt-VY-LDs" secondAttribute="bottom" constant="110" id="yHx-1u-9OQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NTE-5H-9zl"/>
+                    <connections>
+                        <outlet property="ElementButton" destination="YKJ-E9-NJ5" id="1f9-Zr-XJl"/>
+                        <outlet property="HighButton" destination="dXc-vX-Q3l" id="yRv-CM-0t8"/>
+                        <outlet property="MyVocaButton" destination="6o9-Ix-Dhx" id="EvB-Xf-QUg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4np-YP-AFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2410" y="224"/>
+            <point key="canvasLocation" x="-2475" y="-319"/>
         </scene>
     </scenes>
     <resources>
@@ -283,9 +376,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

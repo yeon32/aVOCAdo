@@ -11,12 +11,22 @@ import FirebaseAuth
 class MainViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     
+    @IBOutlet weak var gotomenuButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //popGesture 막기
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
+    
+    
+    /*
+    //MenuViewController로 화면 넘어가는 Segue
+    @IBAction func move(_ sender: Any) {
+        self.performSegue(withIdentifier: "MenuSegue", sender: self)
+    }
+     */
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -44,4 +54,6 @@ class MainViewController: UIViewController {
         }
 
     }
+    
+    
 }
