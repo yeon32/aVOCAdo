@@ -1,0 +1,6 @@
+framework module Pods_aVOCAdo {
+  umbrella header "Pods-aVOCAdo-umbrella.h"
+
+  export *
+  module * { export * }
+}
