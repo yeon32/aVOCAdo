@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol WriteVocaViewDelegate: AnyObject {
     func didSelectRegister(voca: Voca)
@@ -19,6 +20,10 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var meaningTextField: UITextField!
     //등록버튼
     @IBOutlet weak var confirmButton: UIBarButtonItem!
+    //음성 버튼
+    @IBOutlet weak var ttsButton: UIButton!
+    
+    let synthesizer = AVSpeechSynthesizer()
     
     weak var delegate: WriteVocaViewDelegate?
     
@@ -27,7 +32,7 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.configureInputField()
         self.confirmButton.isEnabled = false //등록버튼 비활성화
-    
+        
     }
     
     
@@ -46,6 +51,16 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
         self.delegate?.didSelectRegister(voca: Voca)
         self.navigationController?.popViewController(animated: true)
     }
+    
+    //TTS-음성버튼
+    @IBAction func ttsButtonTapped(_ sender: UIButton) {
+        let soundText = AVSpeechUtterance(string: vocaTextField.text!)
+                
+        soundText.voice = AVSpeechSynthesisVoice(language: "en-US")
+
+        synthesizer.speak(soundText)
+    }
+    
     
     //빈 화면을 클릭했을 때 키보드가 사라지게 만드는 것
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
