@@ -36,8 +36,7 @@ https://user-images.githubusercontent.com/93962252/169674886-063c2041-6b4f-4073-
 
 ## 세부 구현
 - 로그인/회원가입
-  - Google/Apple
-    FirebaseAuth로 회원관리
+  - FirebaseAuth로 회원관리
     
 - 메뉴 페이지
 - 초등 필수 영단어 800
