@@ -82,10 +82,29 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+//특정 셀이 선택 되었을 때
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "VocaDetailViewController") as? VocaDetailViewController else { return }
+        let voca = self.vocaList[indexPath.row]
+        viewController.voca = voca
+        viewController.indexPath = indexPath
+        viewController.delegate = self
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
 extension ViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (UIScreen.main.bounds.width / 2) - 20, height: 200)
+    }
+}
+
+extension ViewController: VocaDetailViewDelegate {
+    func didSelectDelete(indexPath: IndexPath) {
+        self.vocaList.remove(at: indexPath.row)
+        self.collectionView.deleteItems(at: [indexPath])
     }
 }
 
