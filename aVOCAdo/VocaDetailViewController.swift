@@ -14,7 +14,7 @@ protocol VocaDetailViewDelegate: AnyObject {
 class VocaDetailViewController: UIViewController {
 
     @IBOutlet weak var wordLabel: UILabel!
-    @IBOutlet weak var meaningTextField: UITextField!
+    @IBOutlet weak var meaningLabel: UILabel!
     weak var delegate: VocaDetailViewDelegate?
     
     
@@ -32,21 +32,26 @@ class VocaDetailViewController: UIViewController {
     private func configureView() {
         guard let voca = self.voca else { return }
         self.wordLabel.text = voca.word
-        self.meaningTextField.text = voca.meaning
+        self.meaningLabel.text = voca.meaning
     }
     
     
     @IBAction func editButtonTapped(_ sender: UIButton) {
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "WriteVocaViewController") as? WriteVocaViewController else { return }
+        guard let indexPath = self.indexPath else { return }
+        guard let voca = self.voca else { return }
+        viewController.vocaEditorMode = .edit(indexPath, voca)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+       
     
     
     @IBAction func deleteButtonTapped(_ sender: UIButton) {
         guard let indexPath = self.indexPath else { return }
-        self.delegate?.didSelectDelete(indexPath: indexPath)
-        self.navigationController?.popViewController(animated: true)
+            self.delegate?.didSelectDelete(indexPath: indexPath)
+            self.navigationController?.popViewController(animated: true)
 
     }
-    
-
 
 }

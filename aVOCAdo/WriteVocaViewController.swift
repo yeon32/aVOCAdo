@@ -8,6 +8,12 @@
 import UIKit
 import AVFoundation
 
+//수정 열거
+enum VocaEditorMode {
+    case new
+    case edit(IndexPath, Voca)
+}
+
 //delegate를 통해서 단어리스트 화면에 작성된 단어 객체를 전달
 protocol WriteVocaViewDelegate: AnyObject {
     func didSelectRegister(voca: Voca)
@@ -27,11 +33,25 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
     let synthesizer = AVSpeechSynthesizer()     //음성버튼을 위한 초기화
     
     weak var delegate: WriteVocaViewDelegate?
+    var vocaEditorMode: VocaEditorMode = .new
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.configureEditMode()
+    }
+    
+    
+    private func configureEditMode() {
+        switch self.vocaEditorMode {
+        case let .edit(_, voca):
+            self.wordTextField.text = voca.word
+            self.meaningTextField.text = voca.meaning
+            self.confirmButton.title = "수정"
+            
+        default:
+            break
+        }
     }
     
 
