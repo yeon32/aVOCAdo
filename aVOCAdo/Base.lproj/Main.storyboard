@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="width" secondItem="I8l-O3-I9b" secondAttribute="height" multiplier="15:4" id="95u-iU-qC9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jno-VN-SAE">
@@ -55,9 +55,10 @@
                                             <constraint firstAttribute="height" constant="60" id="xS3-T6-B8f"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="이메일/비밀번호로 계속하기">
+                                        <buttonConfiguration key="configuration" style="tinted" title="이메일/비밀번호로 계속하기" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="VBq-so-D6M" kind="show" id="5OU-sH-YXg"/>
@@ -71,9 +72,10 @@
                                         <inset key="titleEdgeInsets" minX="-31" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-119" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="logo_google" title="구글로 계속하기">
+                                        <buttonConfiguration key="configuration" style="tinted" image="logo_google" title="구글로 계속하기" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="googleLoginButtonTapped:" destination="KzM-1n-C6J" eventType="touchUpInside" id="ieb-Zb-QcL"/>
@@ -87,9 +89,10 @@
                                         <inset key="titleEdgeInsets" minX="-31" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-119" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="logo_apple" title="Apple로 계속하기">
+                                        <buttonConfiguration key="configuration" style="tinted" image="logo_apple" title="Apple로 계속하기" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="appleLoginButtonTapped:" destination="KzM-1n-C6J" eventType="touchUpInside" id="cep-D3-nEU"/>
@@ -104,9 +107,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Dcf-vI-3Sf" secondAttribute="trailing" id="quo-Jh-x1q"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aup-yj-m53">
+                                <rect key="frame" x="113" y="289" width="189" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="opb-rw-AsB"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="Uig-BA-tsw" firstAttribute="top" secondItem="jno-VN-SAE" secondAttribute="bottom" constant="95" id="9gw-nY-fCD"/>
@@ -144,7 +151,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m19-lD-Wb0">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W9F-Mg-yJA">
@@ -158,7 +165,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFA-if-SEi">
                                         <rect key="frame" x="0.0" y="114" width="354" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wwa-hg-J2Q">
@@ -186,9 +193,10 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다음">
+                                <buttonConfiguration key="configuration" style="tinted" title="다음">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="VBq-so-D6M" eventType="touchUpInside" id="tOO-12-RRA"/>
@@ -196,7 +204,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pd6-yC-xKY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Pd6-yC-xKY" firstAttribute="trailing" secondItem="eWa-bd-hp8" secondAttribute="trailing" constant="30" id="DU3-Vb-v6b"/>
                             <constraint firstItem="eWa-bd-hp8" firstAttribute="top" secondItem="Pd6-yC-xKY" secondAttribute="top" constant="70" id="RWT-7Z-JAV"/>
@@ -230,7 +238,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-jX-lk0">
                                 <rect key="frame" x="149" y="438" width="116.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efZ-zi-Ht9">
@@ -238,7 +246,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                    <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutButtonTapped:" destination="kOe-H8-xJB" eventType="touchUpInside" id="vvr-cr-VSP"/>
@@ -247,9 +255,10 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAT-ux-kxW">
                                 <rect key="frame" x="147" y="569" width="123" height="36"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Menu로 가기">
+                                <buttonConfiguration key="configuration" style="tinted" title="Menu로 가기">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Zcd-LD-Fba" kind="show" id="CW9-Zq-HnF"/>
@@ -257,7 +266,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jwf-jB-mc9"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="efZ-zi-Ht9" firstAttribute="centerX" secondItem="jwf-jB-mc9" secondAttribute="centerX" id="1s2-od-oHH"/>
                             <constraint firstItem="rAT-ux-kxW" firstAttribute="centerX" secondItem="jwf-jB-mc9" secondAttribute="centerX" id="M06-Gv-Ett"/>
@@ -293,9 +302,10 @@
                                             <constraint firstAttribute="height" constant="80" id="VA7-DO-uVC"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="초등 필수 영단어 800">
+                                        <buttonConfiguration key="configuration" style="tinted" title="초등 필수 영단어 800" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="ElementButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="6TB-zY-WK3"/>
@@ -307,9 +317,10 @@
                                             <constraint firstAttribute="height" constant="80" id="KDg-X7-sYP"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="중고등 필수 영단어 800">
+                                        <buttonConfiguration key="configuration" style="tinted" title="중고등 필수 영단어 800" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="HighButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="Ky3-Cw-zTt"/>
@@ -321,9 +332,10 @@
                                             <constraint firstAttribute="height" constant="80" id="OWN-gB-WtR"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="나만의 단어장">
+                                        <buttonConfiguration key="configuration" style="tinted" title="나만의 단어장" cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="MyVocaButtonTapped:" destination="Zcd-LD-Fba" eventType="touchUpInside" id="j5m-HH-UGd"/>
@@ -343,12 +355,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flt-VY-LDs">
                                 <rect key="frame" x="129.5" y="106" width="155.5" height="72"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bYR-87-0PJ"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="flt-VY-LDs" firstAttribute="top" secondItem="bYR-87-0PJ" secondAttribute="top" constant="62" id="03T-53-yOd"/>
                             <constraint firstItem="flt-VY-LDs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bYR-87-0PJ" secondAttribute="leading" id="9ZJ-3n-7z0"/>
@@ -393,7 +405,9 @@
         <scene sceneID="0jg-0Z-q1N">
             <objects>
                 <navigationController id="3OT-Bb-DYF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="VOCA" image="character.book.closed" catalog="system" selectedImage="character.book.closed.fill" id="dcS-un-KYg"/>
+                    <tabBarItem key="tabBarItem" title="VOCA" image="character.book.closed" catalog="system" selectedImage="character.book.closed.fill" id="dcS-un-KYg">
+                        <color key="badgeColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UVC-T1-H4F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -416,7 +430,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sR0-3u-7Oh">
                                 <rect key="frame" x="0.0" y="56" width="414" height="757"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="82G-jv-DUT">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -438,7 +452,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" systemColor="systemGray5Color"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="4Xy-Bg-Mb9" secondAttribute="trailing" constant="12" id="9i2-Da-8Gf"/>
                                                 <constraint firstAttribute="bottom" secondItem="4Xy-Bg-Mb9" secondAttribute="bottom" constant="12" id="HJS-Ho-Npp"/>
@@ -455,7 +469,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hpz-Vw-t6n"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sR0-3u-7Oh" firstAttribute="leading" secondItem="hpz-Vw-t6n" secondAttribute="leading" id="4gg-7c-D03"/>
                             <constraint firstItem="sR0-3u-7Oh" firstAttribute="top" secondItem="hpz-Vw-t6n" secondAttribute="top" id="AN5-GT-sbd"/>
@@ -490,13 +504,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어 만들기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwt-tr-XvH">
                                 <rect key="frame" x="150" y="64" width="114" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHk-fe-5y6">
                                 <rect key="frame" x="50" y="194" width="314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-dL-s4U" userLabel="Word Text Field">
@@ -510,7 +524,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뜻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38P-M0-shp">
                                 <rect key="frame" x="50" y="330" width="17.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2t-rS-74v">
@@ -527,7 +541,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="speaker.wave.2.fill" catalog="system"/>
+                                    <backgroundConfiguration key="background" image="speaker.wave.2.fill" catalog="system">
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ttsButtonTapped:" destination="VzS-CF-8Ko" eventType="touchUpInside" id="DVR-ax-ErZ"/>
@@ -535,7 +551,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V0W-7J-9y8"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3nf-dL-s4U" firstAttribute="top" secondItem="KHk-fe-5y6" secondAttribute="bottom" constant="12" id="1ed-RM-blI"/>
                             <constraint firstItem="KHk-fe-5y6" firstAttribute="top" secondItem="Lwt-tr-XvH" secondAttribute="bottom" constant="100" id="1jh-Xd-Ux5"/>
@@ -556,7 +572,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PqM-xq-dsQ">
                         <barButtonItem key="rightBarButtonItem" title="등록" id="YLV-aT-q5b">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="confirmButtonTapped:" destination="VzS-CF-8Ko" id="fmz-vW-YSJ"/>
                             </connections>
@@ -582,19 +598,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4O-Ot-een">
-                                <rect key="frame" x="134" y="185" width="146" height="66"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="55"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="134" y="185" width="146" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq0-vL-dD7" userLabel="Meaning Label">
-                                <rect key="frame" x="158" y="328" width="98.5" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="164" y="322" width="86.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xlb-B2-c22">
-                                <rect key="frame" x="134" y="463" width="146" height="48"/>
+                                <rect key="frame" x="134" y="451" width="146" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWB-bD-1ff">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -620,7 +636,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NH8-3Z-uBt"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="o4O-Ot-een" firstAttribute="centerX" secondItem="5KI-D9-38j" secondAttribute="centerX" id="9Et-te-9bh"/>
                             <constraint firstItem="o4O-Ot-een" firstAttribute="leading" secondItem="NH8-3Z-uBt" secondAttribute="leading" constant="134" id="H72-fn-377"/>
@@ -648,6 +664,7 @@
     <resources>
         <image name="character.book.closed" catalog="system" width="115" height="128"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="logo.jpg" width="88.080001831054688" height="113"/>
         <image name="logo_apple" width="33.333332061767578" height="33.333332061767578"/>
         <image name="logo_google" width="33.333332061767578" height="33.333332061767578"/>
         <image name="speaker.wave.2.fill" catalog="system" width="128" height="90"/>
