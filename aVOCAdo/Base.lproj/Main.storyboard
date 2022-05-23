@@ -615,6 +615,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="수정">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="editButtonTapped:" destination="mSX-rW-mAW" eventType="touchUpInside" id="wcm-vJ-LHY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKe-rX-QR0">
                                         <rect key="frame" x="98.5" y="0.0" width="48.5" height="31"/>
@@ -622,6 +625,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="삭제">
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="mSX-rW-mAW" eventType="touchUpInside" id="ivI-2i-H70"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -649,6 +655,10 @@
                             <constraint firstItem="VKa-Vh-88U" firstAttribute="top" secondItem="43x-lS-giw" secondAttribute="bottom" constant="24" id="tly-9w-E6h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="meaningTextField" destination="43x-lS-giw" id="6ye-7t-wND"/>
+                        <outlet property="wordLabel" destination="o4O-Ot-een" id="DS2-cu-Z2y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT6-Xy-4xv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

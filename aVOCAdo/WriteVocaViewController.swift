@@ -59,7 +59,7 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    //hello
+    
     
 }
 
