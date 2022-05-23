@@ -9,7 +9,7 @@ import UIKit
 
 class VocaCell: UICollectionViewCell {
 
-   //단어 Label
-    @IBOutlet weak var vocaLabel: UILabel!
+   //단어리스트에 있는 단어 Label
+    @IBOutlet weak var wordLabel: UILabel!
     
 }

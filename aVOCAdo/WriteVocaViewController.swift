@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 
+//delegate를 통해서 단어리스트 화면에 작성된 단어 객체를 전달
 protocol WriteVocaViewDelegate: AnyObject {
     func didSelectRegister(voca: Voca)
 }
@@ -15,7 +16,7 @@ protocol WriteVocaViewDelegate: AnyObject {
 class WriteVocaViewController: UIViewController, UITextFieldDelegate {
 
     //단어 쓰는 칸
-    @IBOutlet weak var vocaTextField: UITextField!
+    @IBOutlet weak var wordTextField: UITextField!
     //뜻 쓰는 칸
     @IBOutlet weak var meaningTextField: UITextField!
     //등록버튼
@@ -23,41 +24,32 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
     //음성 버튼
     @IBOutlet weak var ttsButton: UIButton!
     
-    let synthesizer = AVSpeechSynthesizer()
+    let synthesizer = AVSpeechSynthesizer()     //음성버튼을 위한 초기화
     
     weak var delegate: WriteVocaViewDelegate?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureInputField()
-        self.confirmButton.isEnabled = false //등록버튼 비활성화
-        
+       
     }
     
-    
-    //모든 칸이 적혀졌을 때 등록버튼이 활성화
-    private func configureInputField() {
-        self.meaningTextField.delegate = self
-        self.vocaTextField.addTarget(self, action: #selector(vocaTextFieldDidChange(_:)), for: .editingChanged)
-    }
+
     
     
-    //등록버튼 눌렀을때
-    @IBAction func confirmButtonTapped(_ sender: Any) {
-        guard let voca = self.vocaTextField.text else {return}
+    //action 등록버튼
+    @IBAction func confirmButtonTapped(_ sender: UIBarButtonItem) {
+        guard let word = self.wordTextField.text else {return}
         guard let meaning = self.meaningTextField.text else {return}
-        let Voca = Voca(voca:voca, meaning: meaning)
-        self.delegate?.didSelectRegister(voca: Voca)
+        let voca = Voca(word: word, meaning: meaning)
+        self.delegate?.didSelectRegister(voca: voca)
         self.navigationController?.popViewController(animated: true)
     }
     
-    //TTS-음성버튼
+    //action TTS-음성버튼
     @IBAction func ttsButtonTapped(_ sender: UIButton) {
-        let soundText = AVSpeechUtterance(string: vocaTextField.text!)
-                
+        let soundText = AVSpeechUtterance(string: wordTextField.text!)
         soundText.voice = AVSpeechSynthesisVoice(language: "en-US")
-
         synthesizer.speak(soundText)
     }
     
@@ -67,20 +59,6 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    @objc private func vocaTextFieldDidChange(_ textField: UITextField) {
-        self.validateInputField()
-    }
-    
-    private func validateInputField() {
-        self.confirmButton.isEnabled = !(self.vocaTextField.text?.isEmpty ?? true) &&
-        !(self.meaningTextField.text?.isEmpty ?? true)
-}
 }
 
-
-extension WriteVocaViewController: UITextViewDelegate {
-    func textViewDidChange(_ textView: UITextView) {
-        self.validateInputField()
-    }
-}
 

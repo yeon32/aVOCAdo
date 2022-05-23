@@ -431,7 +431,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xy-Bg-Mb9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xy-Bg-Mb9" userLabel="Word Label">
                                                     <rect key="frame" x="12" y="12" width="156" height="176"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
@@ -448,7 +448,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="180" height="200"/>
                                         <connections>
-                                            <outlet property="vocaLabel" destination="4Xy-Bg-Mb9" id="JUW-c6-ari"/>
+                                            <outlet property="wordLabel" destination="4Xy-Bg-Mb9" id="Fq5-dD-3sQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -467,7 +467,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aGU-7c-OaV">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="VzS-CF-8Ko" kind="push" id="FWm-kV-gp8"/>
+                                <segue destination="VzS-CF-8Ko" kind="show" id="c5T-ug-Ttg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -499,7 +499,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-dL-s4U">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-dL-s4U" userLabel="Word Text Field">
                                 <rect key="frame" x="50" y="230" width="314" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JXu-RD-k5Z"/>
@@ -566,7 +566,7 @@
                         <outlet property="confirmButton" destination="YLV-aT-q5b" id="mh8-mF-W6M"/>
                         <outlet property="meaningTextField" destination="r2t-rS-74v" id="03X-Yr-gOs"/>
                         <outlet property="ttsButton" destination="9Wi-IN-tkM" id="v6W-2S-kLl"/>
-                        <outlet property="vocaTextField" destination="3nf-dL-s4U" id="nUs-Ad-Bxb"/>
+                        <outlet property="wordTextField" destination="3nf-dL-s4U" id="qUO-XL-QuX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mx-d9-ca6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

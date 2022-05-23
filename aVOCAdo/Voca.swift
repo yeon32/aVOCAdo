@@ -9,6 +9,6 @@ import Foundation
 
 
 struct Voca {
-    var voca: String
+    var word: String
     var meaning: String
 }
