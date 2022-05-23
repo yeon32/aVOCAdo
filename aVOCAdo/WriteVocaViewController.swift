@@ -23,7 +23,7 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
     //음성 버튼
     @IBOutlet weak var ttsButton: UIButton!
     
-    let synthesizer = AVSpeechSynthesizer()
+    let synthesizer = AVSpeechSynthesizer()     //음성버튼을 위한 초기화
     
     weak var delegate: WriteVocaViewDelegate?
     
@@ -43,21 +43,19 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    //등록버튼 눌렀을때
-    @IBAction func confirmButtonTapped(_ sender: Any) {
+    //action 등록버튼
+    @IBAction func confirmButtonTapped(_ sender: UIBarButtonItem) {
         guard let voca = self.vocaTextField.text else {return}
         guard let meaning = self.meaningTextField.text else {return}
-        let Voca = Voca(voca:voca, meaning: meaning)
+        let Voca = Voca(voca: voca, meaning: meaning)
         self.delegate?.didSelectRegister(voca: Voca)
         self.navigationController?.popViewController(animated: true)
     }
     
-    //TTS-음성버튼
+    //action TTS-음성버튼
     @IBAction func ttsButtonTapped(_ sender: UIButton) {
         let soundText = AVSpeechUtterance(string: vocaTextField.text!)
-                
         soundText.voice = AVSpeechSynthesisVoice(language: "en-US")
-
         synthesizer.speak(soundText)
     }
     
@@ -67,14 +65,16 @@ class WriteVocaViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    //단어칸이 입력될 때마다 등록버튼 활성화 여부 판단
     @objc private func vocaTextFieldDidChange(_ textField: UITextField) {
         self.validateInputField()
     }
     
+    //단어칸, 뜻칸이 모두 채워졌을 때 등록버튼 활성화
     private func validateInputField() {
         self.confirmButton.isEnabled = !(self.vocaTextField.text?.isEmpty ?? true) &&
         !(self.meaningTextField.text?.isEmpty ?? true)
-}
+    }
 }
 
 
