@@ -29,8 +29,9 @@ aVOCAdo는 초·중·고등학생들을 위한 영어단어 암기장인 학습 
 ## 구현 화면
 
 
+![전체_영상_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/93962252/169876488-7b2af7e1-86b5-47a6-a581-d9ba5d0a9cc5.gif)
 
-https://user-images.githubusercontent.com/93962252/169674886-063c2041-6b4f-4073-9694-45a4e6b5fb57.mov
+
 
 
 
