@@ -479,7 +479,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="szB-Gz-pfm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aGU-7c-OaV">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="VzS-CF-8Ko" kind="show" id="c5T-ug-Ttg"/>
                             </connections>
