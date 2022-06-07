@@ -17,6 +17,10 @@
 		7C6B8E5A2828F691008500C7 /* EnterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B8E592828F691008500C7 /* EnterEmailViewController.swift */; };
 		7C6B8E5C28290372008500C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B8E5B28290372008500C7 /* MainViewController.swift */; };
 		7C6B8E5E282915F2008500C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C6B8E5D282915F2008500C7 /* GoogleService-Info.plist */; };
+		7C7EB416284DB22500AFF297 /* ElementaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EB415284DB22500AFF297 /* ElementaryListViewController.swift */; };
+		7C7EB418284DB41300AFF297 /* Elementary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EB417284DB41300AFF297 /* Elementary.swift */; };
+		7C7EB41B284DB51E00AFF297 /* ElementaryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EB419284DB51E00AFF297 /* ElementaryListCell.swift */; };
+		7C7EB41C284DB51E00AFF297 /* ElementaryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C7EB41A284DB51E00AFF297 /* ElementaryListCell.xib */; };
 		7CEDA9DB2832A68900D55B2B /* Voca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDA9DA2832A68900D55B2B /* Voca.swift */; };
 		7CF60A7C28201C58004100CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60A7B28201C58004100CE /* AppDelegate.swift */; };
 		7CF60A7E28201C58004100CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF60A7D28201C58004100CE /* SceneDelegate.swift */; };
@@ -39,6 +43,10 @@
 		7C6B8E5D282915F2008500C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C6B8E6228298132008500C7 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6B8E662829818E008500C7 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7EB415284DB22500AFF297 /* ElementaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryListViewController.swift; sourceTree = "<group>"; };
+		7C7EB417284DB41300AFF297 /* Elementary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elementary.swift; sourceTree = "<group>"; };
+		7C7EB419284DB51E00AFF297 /* ElementaryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryListCell.swift; sourceTree = "<group>"; };
+		7C7EB41A284DB51E00AFF297 /* ElementaryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementaryListCell.xib; sourceTree = "<group>"; };
 		7CEDA9DA2832A68900D55B2B /* Voca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voca.swift; sourceTree = "<group>"; };
 		7CF60A7828201C58004100CE /* aVOCAdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aVOCAdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF60A7B28201C58004100CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +112,10 @@
 		7CF60A7A28201C58004100CE /* aVOCAdo */ = {
 			isa = PBXGroup;
 			children = (
+				7C7EB41A284DB51E00AFF297 /* ElementaryListCell.xib */,
+				7C7EB419284DB51E00AFF297 /* ElementaryListCell.swift */,
+				7C7EB415284DB22500AFF297 /* ElementaryListViewController.swift */,
+				7C7EB417284DB41300AFF297 /* Elementary.swift */,
 				7CEDA9DA2832A68900D55B2B /* Voca.swift */,
 				7C5CCECF283287C0008AF043 /* ViewController.swift */,
 				7C5CCECD28325959008AF043 /* VocaDetailViewController.swift */,
@@ -188,6 +200,7 @@
 				7CF60A9228202096004100CE /* logo.jpg in Resources */,
 				7CF60A8828201C59004100CE /* LaunchScreen.storyboard in Resources */,
 				7C6B8E5E282915F2008500C7 /* GoogleService-Info.plist in Resources */,
+				7C7EB41C284DB51E00AFF297 /* ElementaryListCell.xib in Resources */,
 				7CF60A8528201C59004100CE /* Assets.xcassets in Resources */,
 				7CF60A8328201C58004100CE /* Main.storyboard in Resources */,
 			);
@@ -245,9 +258,12 @@
 				7C5CCED0283287C0008AF043 /* ViewController.swift in Sources */,
 				7C6B8E582828EA1C008500C7 /* LoginViewController.swift in Sources */,
 				7C5CCEC82830DC75008AF043 /* MenuViewController.swift in Sources */,
+				7C7EB41B284DB51E00AFF297 /* ElementaryListCell.swift in Sources */,
 				7CEDA9DB2832A68900D55B2B /* Voca.swift in Sources */,
 				7C5CCECA28325014008AF043 /* VocaCell.swift in Sources */,
+				7C7EB418284DB41300AFF297 /* Elementary.swift in Sources */,
 				7C5CCECC28325824008AF043 /* WriteVocaViewController.swift in Sources */,
+				7C7EB416284DB22500AFF297 /* ElementaryListViewController.swift in Sources */,
 				7CF60A7C28201C58004100CE /* AppDelegate.swift in Sources */,
 				7C5CCECE28325959008AF043 /* VocaDetailViewController.swift in Sources */,
 				7C6B8E5A2828F691008500C7 /* EnterEmailViewController.swift in Sources */,

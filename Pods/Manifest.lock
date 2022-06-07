@@ -4,6 +4,9 @@ PODS:
     - FirebaseAuth (~> 9.0.0)
   - Firebase/CoreOnly (9.0.0):
     - FirebaseCore (= 9.0.0)
+  - Firebase/Database (9.0.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 9.0.0)
   - FirebaseAuth (9.0.0):
     - FirebaseCore (~> 9.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
@@ -21,6 +24,9 @@ PODS:
     - nanopb (~> 2.30908.0)
   - FirebaseCoreInternal (9.0.0):
     - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - FirebaseDatabase (9.0.0):
+    - FirebaseCore (~> 9.0)
+    - leveldb-library (~> 1.22)
   - GoogleDataTransport (9.1.4):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
@@ -41,6 +47,7 @@ PODS:
   - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.7.2)
+  - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -50,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Auth
+  - Firebase/Database
 
 SPEC REPOS:
   trunk:
@@ -58,9 +66,11 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreInternal
+    - FirebaseDatabase
     - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
+    - leveldb-library
     - nanopb
     - PromisesObjC
 
@@ -70,12 +80,14 @@ SPEC CHECKSUMS:
   FirebaseCore: e4c0b5d9727eaee0b43f9ed00baff7500c188d7b
   FirebaseCoreDiagnostics: 54410e5d156bf406a764c2722d9f77d682723b4c
   FirebaseCoreInternal: 5b8f4f2e2970a4cb9bd1cf7ada16c8ba69a29530
+  FirebaseDatabase: c7bb29fefd9196f719164452ebe287bc8f5976dd
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
 
-PODFILE CHECKSUM: 1baa85eeed841ae175d1f2f8b36d1a2e93a5a769
+PODFILE CHECKSUM: bd44288b9dc05f12706dad9f25f3cd18f05179ac
 
 COCOAPODS: 1.11.3

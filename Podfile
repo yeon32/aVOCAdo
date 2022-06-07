@@ -7,5 +7,6 @@ target 'aVOCAdo' do
 
   # Pods for aVOCAdo
   pod 'Firebase/Auth' 
+  pod 'Firebase/Database'
 
 end
