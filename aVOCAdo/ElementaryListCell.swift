@@ -22,5 +22,8 @@ class ElementaryListCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    /*
+     
+     초중등 영단어 리스트 나타내기
+     */
 }
